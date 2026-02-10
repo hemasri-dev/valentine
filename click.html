@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love</title>
+    <style>
+        body{
+            /* background-color: pink; */
+            background-image: url("./images/lifting.jpg");
+        }
+        h1{
+            text-align: center;
+            color: black;
+            background-color:rgb(251, 130, 149);
+        }
+        .row1{
+            border: solid 2px none;
+            border-radius: 20px;
+            text-align: center;
+            margin-left: 350px;
+            margin-right: 350px;
+            background-color: rgb(244, 123, 142);
+        }
+        img{
+            padding-top: 25px;
+            width: 300px;
+            height: 350px;
+        }
+        p{
+            font-family: cursive;
+            padding-bottom: 20px;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I AM WAITING FOR YOUR GIFT 🎁🤩❣️</h1>
+    </header>
+    <br> 
+    <section>
+        <div class="row1">
+
+            <img id="myimage" src="./images/sitting.gif" alt="" onclick="change() ">
+            <p><b>click the image 👆🏻<br> I HOPE, NEE SURPRISE AAYIRUPANU NENAIKIRAN 😁🥰</b></p>
+        </div>
+    </section>
+    <script>
+        function change(){
+            document.getElementById("myimage").src = "images/me.jpeg";
+        };
+    </script>
+</body>
+</html>
