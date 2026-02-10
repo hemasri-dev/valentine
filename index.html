@@ -46,5 +46,23 @@
             <button id="no"><a href="">No 🥲</a></button>
         <p>Mudinja  <b>NO </b>solli paaru 😅💃🏻</p>
     </section>
+    <script>
+        let hour = new Date().getHours();
+        let greetings;
+        
+        if (hour < 12)
+    {
+        greetings = "Good Morning! 🙏🏻 My Dear Love 💌";
+    }
+    else if (hour < 18)
+    {
+       greetings = "Good Afternoon! 🙏🏻 My Dear Love 💌"; 
+    }
+    else {
+        greetings = "Good Evening! 🙏🏻 My Dear Love 💌";
+    }
+
+    alert(greetings)
+    </script>
 </body>
 </html>
