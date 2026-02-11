@@ -13,19 +13,25 @@
             text-align: center;
             color: black;
             background-color:rgb(251, 130, 149);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
         .row1{
             border: solid 2px none;
             border-radius: 20px;
             text-align: center;
-            margin-left: 350px;
-            margin-right: 350px;
+            /* margin-left: 350px;
+            margin-right: 350px; */
             background-color: rgb(244, 123, 142);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
         img{
+            padding: 20px;
             padding-top: 25px;
-            width: 300px;
+            width: 250px;
             height: 350px;
+        }
+        video{
+            padding-top: 20px;
         }
         p{
             font-family: cursive;
@@ -34,23 +40,44 @@
         img:hover{
             transform: scale(1.1);
         }
+        section{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>I AM WAITING FOR YOUR GIFT 🎁🤩❣️</h1>
     </header>
-    <br> 
+    <!-- <br>  -->
     <section>
         <div class="row1">
-
             <img id="myimage" src="./images/sitting.gif" alt="" onclick="change() ">
-            <p><b>click the image 👆🏻<br> I HOPE, NEE SURPRISE AAYIRUPANU NENAIKIRAN 😁🥰</b></p>
+            <p><b>click the image 👆🏻</b></p>
         </div>
+        <div class="row1">
+            <img id="myimage2" src="./images/sitting.gif" alt="" onclick="changevideo()" >
+            <video id="myvdo" width="350px" height="350px" controls style="display: none;">
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+            <p><b>click the image 👆🏻</b></p>
+        </div>
+       
     </section>
+    <footer>
+         <h1><b>NEE SURPRISE AAYIRUPA NU NENAIKIRAN 😺💝😁</b></h1>
+    </footer>
     <script>
         function change(){
             document.getElementById("myimage").src = "images/me.jpeg";
+        };
+        function changevideo(){
+            document.getElementById("myimage2").style.display = "none";
+            const video = document.getElementById("myvdo");
+            video.style.display = "block";
+            video.play();
         };
     </script>
 </body>
